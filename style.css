@@ -1,0 +1,315 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lora', serif;
+}
+
+.slidebox{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.slides{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+.slides img{
+    position: relative;
+    width: 100%; 
+}
+#slide-img1,#slide-img2,#slide-img3,#slide-img4,#slide-img5{
+    position: relative;
+    vertical-align: middle;
+    margin-top: -125px;
+}
+#slide-img4{
+    width: 100%;
+    margin-left: -150px;
+}
+#slide-img2 {
+    width: 140%;
+    margin-top: -240px;
+    margin-left: -180px;
+}
+
+#logo{
+    position: absolute;
+    right: 20%;
+    top: 2vw;
+    width: 20%;
+    
+} 
+h3{
+    position: absolute;
+    left: 48%;
+    top: 25vw;
+    width: 45%;
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+} 
+#social-caption{
+    margin-top: -2vw;
+}
+.slides>.social{
+    position: absolute;
+    top: 31vw;
+    left: 55%;
+    list-style: none;
+    display: flex;
+}
+.slides>.social li{
+    margin-right: 4rem;
+}
+
+
+.section2{
+    position: absolute;
+    width: 100%;
+    height: 110vh;
+    background-color: white;
+}
+.tea-cup{
+    margin-left: 8%;
+    display: flex;
+}
+#tea-cup{
+    margin-top: 14vh;
+    width: 28%;
+    height: 28%;
+}
+
+
+#beontea,p{
+    margin-top: 15vh;
+    margin-left: 5vw;
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: 1;
+    font-family: 'Kaisei HarunoUmi', serif;
+} 
+.tea-cup-caption > p{
+    margin-top: -5vh;
+    font-size: 1.3rem;
+}
+.bold{
+    margin-top: -5px;
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+.ingredients{
+    margin-left: 8%;
+    display: flex;
+}
+#ingredients-img{
+    margin-top: 14vh;
+    margin-right: 4vw;
+    width: 28%;
+    height: 28%;
+}
+.ingredients-caption>p{
+    margin-left: -2.6vh;
+    margin-top: -1vh;
+    font-size: 1.3rem;
+}
+#certified{
+    width: 30vw;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*fadingn animation*/
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from{opacity: 0.7;}
+    to{opacity: 1;}
+}
+
+@keyframes fade{
+    from{opacity: 0.7;}
+    to{opacity: 1;}
+}
+/* social responsive*/
+
+@media screen and (min-width:880px) {
+
+    .social img{
+        width:50px;
+        margin-left: 2vw;
+        margin-top: 4vw;
+    }
+    #cashless{
+      width: 28px;
+    }
+   
+
+}
+@media screen and (max-widtha: 480px) {
+    #slide-img1,#slide-img2,#slide-img3,#slide-img4,#slide-img5{
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+
+
+
+@media screen and (max-width:880px){
+
+    h3{
+        font-size: 3rem;
+    }
+    #slide-img1,#slide-img2,#slide-img3,#slide-img4,#slide-img5{
+        width: 120vw;
+        height: 130vh;
+    }
+
+    #cashless,#hydroalcoholic-gel,#social{
+        position: absolute;
+        top: 34rem;
+        left: -70%;
+        width: 20%;
+    }
+    #social{
+        margin-left: 4.5rem;
+    }
+    #cashless{
+        margin-left: 7.5rem;
+        width: 17%;
+    }
+
+    #ingredients-img{
+        width: 100vw;
+    }
+    #ingredents-heading{
+        width: 100vw;
+        text-align: center;
+        display: inline;
+    }
+    #ingredents-heading>p{
+        width: 49vw;
+        text-align: center;
+        display: block;
+    }
+    #certified{
+        width: 100vw;
+
+    }
+    #tea-cup{
+        margin-left: 0vh;
+        width: 100vw;
+    }
+    .ingredients{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #beontea{
+        font-size: 1rem;
+    }
+    .slides {
+        width: 120vw;
+    }
+
+    .tea-cup{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #tea-cup{
+        margin-left: 13vw;
+        width: 70vw;
+        height: 70vh;
+    }
+    .tea-cup-caption{
+        width: 100%;
+        font-size: 1.7rem;
+    }
+    #logo {
+        top: 5%;
+        left: 50%;
+        width: 40%;
+        transform: translate(-50%,-0%);
+    }
+    h3 {
+        left: 50%;
+        top: 71%;
+        transform: translate(-60%, -50%);
+        width: 45%;
+        margin-top: 10vh;
+        font-size: 8vw;
+    }
+    .slides img{
+        background-size: cover;
+    }
+}
+
+
+/*loading animtion css
+*/
+.loader-wraper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+}
+#loading {
+    -webkit-animation: rotation 2s 1 linear;
+    width: 15%;
+    margin-left: 40%;
+    margin-top: 15%;
+}
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+@keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
